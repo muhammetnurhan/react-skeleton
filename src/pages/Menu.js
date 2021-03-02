@@ -5,11 +5,10 @@ export default class Menu extends Component {
     return (
       <div>
         <aside className="main-sidebar sidebar-dark-primary elevation-4">
-        <a href="#" className="brand-link">
-        <img src="dist/img/logo.svg" alt="Teleskop Logo" className="brand-image img-circle  Logo"/>
-          
+          <a href="#" className="brand-link">
+            <img src="dist/img/logo.svg" alt="Teleskop Logo" className="brand-image img-circle  Logo" />
             <span className="brand-text">Teleskop</span>
-            </a>
+          </a>
           <div className="sidebar">
             <nav className="mt-2">
               
