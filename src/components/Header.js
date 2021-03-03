@@ -1,7 +1,6 @@
-import React, { Component } from 'react'
+import React from "react"
 
-export default class Header extends Component {
-  render() {
+export const Header = () => {
     return (
       <div>
         <nav className="main-header navbar navbar-expand navbar-white navbar-light">
@@ -13,4 +12,3 @@ export default class Header extends Component {
         </nav>
       </div>)
   }
-}

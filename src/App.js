@@ -1,17 +1,17 @@
-import Header from './pages/Header';
-import Menu from './pages/Menu';
-import Dashboard from './pages/Dashboard';
-import Footer from './pages/Footer';
-
-function App() {
+import React from "react";
+import { BrowserRouter as Router, Switch } from "react-router-dom";
+import { Login, Home, User } from "./pages/";
+import { PublicRoute, PrivateRoute } from "./router/";
+const App = () => {
   return (
-    <div className="wrapper">
-      <Header/>
-      <Menu/>
-      <Dashboard/>
-      <Footer/>
-    </div>
+    <Router>
+      <Switch>
+        <PrivateRoute exact path="/" component={Home} />
+        <PrivateRoute exact path="/login" component={Login} />
+        <PrivateRoute exact path="/user/:id" component={User} />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;

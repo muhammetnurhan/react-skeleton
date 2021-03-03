@@ -3,16 +3,8 @@
     width: 35px !important;
     margin: 15px;
 }
-[class*=sidebar-dark-] {
-    background-color: white;
-}
-[class*=sidebar-dark] .brand-link, [class*=sidebar-dark] .brand-link .pushmenu {
-    color: #0e71b8;
-    font-weight: bold !important;
-    border-bottom: 1px solid #c6c6c6;
-}
-[class*=sidebar-dark] .brand-link .pushmenu:hover, [class*=sidebar-dark] .brand-link:hover {
-    color: #0e71b8;
-    font-weight: bold !important;
-    border-bottom: 1px solid #c6c6c6;
+.nav-sidebar .nav-link p {
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
 }
